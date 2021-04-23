@@ -2,17 +2,116 @@
 <html>
 <head>
 	<title>Products</title>
+	<style>
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+</style>
 </head>
 <body>
-<picture>
+	<div style="float: left;">
+		<caption style="text-align:left;font-style:italic;font-size: 12px;font-family: cursive;color: rgb(255,0,0);">A list of the products</caption>
+		<picture>
   <source media="(min-width: 650px)" srcset=" ../images/perfumes.jpg">
   <source media="(min-width: 465px)" srcset=" ../images/items.jpg">
   <img src=" ../images/cartoon.jpg">
 </picture>
+</div>
+
+<table>
+
+	<tr>
+		<th ></th>
+		<th colspan="2">Prices</th>
+		
+	</tr>
+
+	<td><img src=" ../images/items.jpg"></td>
+<td><button name="Checkout" formaction="public/sales.html">Checkout</button><p> 122000 dollars.</p>
+
+</td>
+<tr>
+	<th colspan="2">Negotiations</th>
+</tr>
+<td><button>10000 and above possible entries</button></td>
+<br>
+<td><button>10000 and below possible entries</button></td>
+ <tr>
+ 	<th >Items on Offer</th>
+		<th colspan="2">Prices</th>
+	</tr>
+	<div style="float:right;">
+		<tr>
+ 	<td><img src=" ../images/download.jpg"></td>
+ 	<td><button name="Checkout" formaction="public/sales.html">Checkout</button><p>150000 dollars</p>
+ 	</td>
+ </tr>
+ <tr>
+ 	<th>Items on Offer</th>
+ 			<th colspan="2">Prices</th>
+
+ </tr>
+ <tr>
+ 	<td><img src=" ../images/Cartoon movies.jpg"></td>
+ </tr>
+</div>
+	
+</table>
+
+<div class="gallery">
+  <a target="_blank" href=" ../images/Cartoon movies.jpg">
+    <img src=" ../images/Cartoon movies.jpg" alt="Cartoon movies.jpg" width="600" height="400">
+  </a>
+  <div class="desc"></div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href=" ../images/ceo.jpg">
+    <img src=" ../images/ceo.jpg" alt="Cartoon" width="600" height="400">
+  </a>
+  <div class="desc">Latest emojis</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href=" ..images/perfumes.jpg">
+    <img src=" ../images/perfumes.jpg" alt="perfumes" width="600" height="400">
+  </a>
+  <div class="desc">Perfumes</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href=" ../images/items.jpg">
+    <img src=" ../images/items.jpg" alt="items" width="600" height="400">
+  </a>
+  <div class="desc">Images</div>
+</div>
+
 
 <br>
 <br>
-<caption>A vidoe showing a list of products sold online.</caption>
+<div>
+	<caption style="text-align: center;font-style:italic;font-size: 12px;font-family: cursive;color: rgb(255,0,0);">A vidoe showing a list of products sold online.</caption>
+	<br>
+	<br>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/9lQsYBvo4lY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="margin: auto;"></iframe>
+</div>
+
 </body>
 </html>
