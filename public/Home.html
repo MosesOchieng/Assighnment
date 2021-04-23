@@ -1,30 +1,54 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<style type="text/css">
+		body{
+			background-color: rgb(0,0,255);
+			background-image: " ../images/images.png" 
+		}
+	</style>
 	<title>Sign Up Form</title>
 
 </head>
 <body>
-<picture>
-  <source media="(min-width: 650px)" srcset="">
-  <source media="(min-width: 465px)" srcset="">
-  <img src="">
+	<div>
+		<picture>
+  <source media="(min-width: 650px)" srcset=" ../images/female.png">
+  <source media="(min-width: 465px)" srcset=" ../images/male.jpg">
+  <img src=" ../images/both.jpg">
 </picture>
+</div>
 
-<caption style="font-family: cursive;font-size: 10px;">Sign Up</caption>
-<div>	
+<aside>
+	<div class="gallery" style="float: right;">
+	<form>
+		<div>
+			<div><a href=" ../public/Products.html" target="_blank"><input style="text-align: center;" type="button" onclick="alert(Do you have an account already)" value="Log in" ></a>
+		</div>
+		<br>
+		<input type="Username" name="Username" autofocus="Username" placeholder="Username">
+		<input type="Password" name="Password" maxlength="16" pattern="[A-Z a-z]{12}" title="The Password must consist of upper cases" placeholder="Password">
+	</div>
+		
+	</form>
+</div>
 
-	<form action="action_page">
+</aside>
+
+<div>
+<caption style="font-family: cursive;font-size: 10px;float:left;">Sign Up</caption>
+	<form action="action_page" autocomplete="on"> 
 		
 	<p>
-	First name
-	<input type="text" name="First name">
+	<input type="text" name="First name" autofocus="First name" placeholder="First name">
+</p>
+<p>
+<input type="text" name="Last name" autofocus="Last name" placeholder="Last name">
 </p>
 	<br>
-	<br>
-	<p>
-Last name
-<input type="text" name="Last name">
+	
+	Birth date
+	<input type="month" name="bdaymonth">
 <br>
 <br>
 Gender
@@ -36,13 +60,16 @@ value="female">Female
 <br>
 <br>
 Age
-<input type="text" name="age">
+<input type="text" name="age" min="18">
 <br>
 <br>
-
+User email :
+<input type="email" name="email">
+<br>
+<br>
 Password
 <br>
-<input type="text" name="Password">
+<input type="text" name="Password" pattern="[A-Z a-z]{12}" title="The Password must consist of upper cases" maxlength="16">
 <br>
 <br>
 Confirm Password
@@ -77,10 +104,12 @@ Confirm Password
 	<br>
 	<br>
 
-	<input type="text" name="Country">
+	<input type="Country" name="Country">
 <label for="Country">Country
 	
 </label>
+<br>
+<br>
 	<a href=" ../public/Products.html"><input type="submit" value="submit" style="display: inline-block;width: 70px;"></a>
 </form>
 

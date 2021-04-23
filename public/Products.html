@@ -3,6 +3,9 @@
 <head>
 	<title>Products</title>
 	<style>
+		body{
+			background-color: rgb(255,255,0);
+		}
 div.gallery {
   margin: 5px;
   border: 1px solid #ccc;
@@ -26,7 +29,52 @@ div.desc {
 </style>
 </head>
 <body>
-	<div style="float: left;">
+	<div style="float:right;">	
+
+		<aside>
+
+		<table>	
+			<tr>
+				<th colspan="2">Prices</th>
+		
+	</tr>
+		<tr>
+	<td>
+		<img src=" ../images/items.jpg" style="width:50%;"></td>
+<td><button name="Checkout" formaction="public/sales.html">Checkout</button><p> 122000 dollars.</p>
+
+</td>
+
+</tr>
+<tr>
+	<th colspan="2">Negotiations</th>
+</tr>
+<td><button>10000 and above possible entries</button></td>
+<br>
+<td><button>10000 and below possible entries</button></td>
+</tr>
+
+
+</table>
+	
+</aside>
+
+</div>
+<br>
+<br>
+
+	<section>
+
+		<div>
+		<form>
+			Search favourite Item
+			<input style="width: 300px;height: 50px;" type="search" name="product search">
+		</form>
+	</div>
+	<br>
+	<br>
+	<br>
+	<div style="display: block;margin: auto;">
 		<caption style="text-align:left;font-style:italic;font-size: 12px;font-family: cursive;color: rgb(255,0,0);">A list of the products</caption>
 		<picture>
   <source media="(min-width: 650px)" srcset=" ../images/perfumes.jpg">
@@ -36,33 +84,28 @@ div.desc {
 </div>
 
 <table>
+<div style="float: left;">
 
 	<tr>
-		<th ></th>
-		<th colspan="2">Prices</th>
-		
-	</tr>
-
-	<td><img src=" ../images/items.jpg"></td>
-<td><button name="Checkout" formaction="public/sales.html">Checkout</button><p> 122000 dollars.</p>
-
-</td>
-<tr>
-	<th colspan="2">Negotiations</th>
-</tr>
-<td><button>10000 and above possible entries</button></td>
-<br>
-<td><button>10000 and below possible entries</button></td>
- <tr>
  	<th >Items on Offer</th>
 		<th colspan="2">Prices</th>
 	</tr>
-	<div style="float:right;">
 		<tr>
  	<td><img src=" ../images/download.jpg"></td>
  	<td><button name="Checkout" formaction="public/sales.html">Checkout</button><p>150000 dollars</p>
  	</td>
  </tr>
+ <tr>
+	<th colspan="2">Negotiations</th>
+</tr>
+<tr>
+<td><button>10000 and above possible entries</button></td>
+<br>
+<td><button>10000 and below possible entries</button></td>
+</tr>
+</div>
+<div style="float: right">
+
  <tr>
  	<th>Items on Offer</th>
  			<th colspan="2">Prices</th>
@@ -70,12 +113,24 @@ div.desc {
  </tr>
  <tr>
  	<td><img src=" ../images/Cartoon movies.jpg"></td>
+ 	<td><button name="Checkout" formaction="public/sales.html">Checkout</button><p>150000 dollars</p>
  </tr>
+<tr>
+<td><button>10000 and above possible entries</button></td>
+<br>
+<td><button>10000 and below possible entries</button></td>
+</tr>
+
 </div>
-	
+
+
 </table>
 
-<div class="gallery">
+</section>
+<div style="float: right;">
+	<aside>
+
+		<div class="gallery">
   <a target="_blank" href=" ../images/Cartoon movies.jpg">
     <img src=" ../images/Cartoon movies.jpg" alt="Cartoon movies.jpg" width="600" height="400">
   </a>
@@ -93,25 +148,37 @@ div.desc {
   <a target="_blank" href=" ..images/perfumes.jpg">
     <img src=" ../images/perfumes.jpg" alt="perfumes" width="600" height="400">
   </a>
-  <div class="desc">Perfumes</div>
-</div>
+  </div>
 
-<div class="gallery">
+  <div class="desc">Perfumes</div><div class="gallery">
   <a target="_blank" href=" ../images/items.jpg">
     <img src=" ../images/items.jpg" alt="items" width="600" height="400">
   </a>
   <div class="desc">Images</div>
 </div>
 
+</aside>
+	
 
-<br>
-<br>
-<div>
+
+</div>
+
+<div  style="display: block;margin: auto;">
 	<caption style="text-align: center;font-style:italic;font-size: 12px;font-family: cursive;color: rgb(255,0,0);">A vidoe showing a list of products sold online.</caption>
 	<br>
 	<br>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/9lQsYBvo4lY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="margin: auto;"></iframe>
 </div>
+
+
+
+
+
+<br>
+<br>
+
+
+	
 
 </body>
 </html>
